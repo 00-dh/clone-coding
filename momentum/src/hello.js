@@ -1,7 +1,6 @@
 const login = document.querySelector(".login");
 const userNameInput = document.querySelector("input");
-
-let welcomeMessage = document.querySelector(".welcome_message");
+const welcomeMessage = document.querySelector(".welcome_message");
 
 const HIDDEN_CLASSNAME = "hidden";
 
