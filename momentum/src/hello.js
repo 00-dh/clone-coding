@@ -23,6 +23,7 @@ function submitName(event) {
   event.preventDefault();
   login.classList.add(HIDDEN_CLASSNAME);
   clock.classList.remove(HIDDEN_CLASSNAME);
+  clock.classList.add("visibility");
   const userName = userNameInput.value;
   localStorage.setItem("username", userName);
   paintName(userName);
