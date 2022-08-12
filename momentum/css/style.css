@@ -19,6 +19,7 @@ body {
 }
 
 #clock {
+  font-weight: 500;
   transition: all 1.5s ease-in-out;
   margin: 0;
   font-size: 1050%;
