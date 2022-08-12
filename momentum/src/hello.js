@@ -22,12 +22,14 @@ function timeGreeting() {
 function submitName(event) {
   event.preventDefault();
   login.classList.add(HIDDEN_CLASSNAME);
+  clock.classList.remove(HIDDEN_CLASSNAME);
   const userName = userNameInput.value;
   localStorage.setItem("username", userName);
   paintName(userName);
 }
 
 function paintName(name) {
+  clock.classList.remove(HIDDEN_CLASSNAME);
   welcomeMessage.classList.remove(HIDDEN_CLASSNAME);
   timeGreeting();
   welcomeMessage.innerText = `Good ${greetingTime}, ${name}`;
