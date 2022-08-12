@@ -1,5 +1,4 @@
 const login = document.querySelector(".login");
-const greetingMessage = document.querySelector(".greeting_message");
 const userNameInput = document.querySelector("input");
 
 let welcomeMessage = document.querySelector(".welcome_message");
@@ -10,7 +9,20 @@ function submitName(event) {
   event.preventDefault();
   login.classList.add(HIDDEN_CLASSNAME);
   const userName = userNameInput.value;
-  welcomeMessage.classList.remove(HIDDEN_CLASSNAME);
-  welcomeMessage.innerText = `Good after noon ${userName}`;
+  localStorage.setItem("username", userName);
+  paintName(userName);
 }
-login.addEventListener("submit", submitName);
+
+function paintName(name) {
+  welcomeMessage.classList.remove(HIDDEN_CLASSNAME);
+  welcomeMessage.innerText = `Good after noon ${name}`;
+}
+
+const savedUserName = localStorage.getItem("username");
+
+if (savedUserName === null) {
+  login.classList.remove(HIDDEN_CLASSNAME);
+  login.addEventListener("submit", submitName);
+} else {
+  paintName(savedUserName);
+}
