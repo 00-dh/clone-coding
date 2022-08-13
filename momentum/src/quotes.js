@@ -42,8 +42,8 @@ const quotes = [
   },
 ];
 
-const quote = document.querySelector(".quote span");
-const author = document.querySelector(".author span");
+const quote = document.querySelector(".quotes span:first-child");
+const author = document.querySelector(".quotes span:last-child");
 
 const qutoeDiv = document.querySelector(".quote");
 const authorDiv = document.querySelector(".author");
