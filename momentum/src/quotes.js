@@ -45,8 +45,7 @@ const quotes = [
 const quote = document.querySelector(".quotes span:first-child");
 const author = document.querySelector(".quotes span:last-child");
 
-const qutoeDiv = document.querySelector(".quote");
-const authorDiv = document.querySelector(".author");
+const quoteDiv = document.querySelector(".quotes");
 
 const randomQuotes = quotes[Math.floor(Math.random() * quotes.length)];
 quote.innerText = `"${randomQuotes.quote}"`;
@@ -62,5 +61,5 @@ function unVisibleAuthor() {
   author.classList.add("unvisible");
 }
 
-quote.addEventListener("mouseenter", visibleAuthor);
-quote.addEventListener("mouseleave", unVisibleAuthor);
+quoteDiv.addEventListener("mouseenter", visibleAuthor);
+quoteDiv.addEventListener("mouseleave", unVisibleAuthor);

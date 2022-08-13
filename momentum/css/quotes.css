@@ -5,12 +5,24 @@
 .visible {
   opacity: 1;
 }
+.quotes {
+  width: 600px;
+  height: 58px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translateX(-50%);
+}
 
 .quote {
   font-size: 22px;
   color: rgb(241, 241, 241);
   position: absolute;
-  bottom: 3%;
+  bottom: 25%;
   left: 50%;
   transform: translate(-50%, 0);
   white-space: nowrap;
@@ -20,7 +32,7 @@
   font-size: 20px;
   color: rgb(193, 193, 193);
   position: absolute;
-  bottom: 3%;
+  bottom: 25%;
   left: 50%;
   transform: translate(-50%, 0);
   transition: all 0.5s ease-in-out;
@@ -30,12 +42,12 @@
   transition: opacity 0.5s;
 }
 
-.quote:hover {
+.quotes:hover > .quote {
   transform: translate(-50%, -50%);
   transition: all 0.5s ease-in-out;
 }
 
-.quote:hover + .author {
+.quotes:hover > .author {
   transform: translate(-50%, 60%);
   transition: all 0.5s ease-in-out;
 }
