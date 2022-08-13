@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,8 +22,20 @@
       <h1 class="greeting_message">Hello, What's your name?</h1>
       <input class="input_name" type="text" maxlength="10" required />
     </form>
+    <form class="todo_list">
+      <h1>What is your main focus for today?</h1>
+      <input class="input_todo" tpye="text" />
+    </form>
+    <div class="quote">
+      <span>1</span>
+    </div>
+    <div class="author">
+      <span class="unvisible">1</span>
+    </div>
     <script src="src/hello.js"></script>
     <script src="src/clock.js"></script>
     <script src="src/bgp.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/quotes.js"></script>
   </body>
 </html>

@@ -1,0 +1,18 @@
+.todo_list {
+  font-size: 40px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input_todo {
+  outline: none;
+  border: none;
+  border-bottom: 3px solid white;
+  background: transparent;
+  text-align: center;
+  color: white;
+  width: 600px;
+  font-size: 40px;
+}

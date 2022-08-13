@@ -1,0 +1,19 @@
+.hidden {
+  opacity: 0;
+}
+
+.visibility {
+  opacity: 1;
+}
+
+#clock {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  transition: all 1.5s ease-in-out;
+  margin: 0;
+  font-size: 1050%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

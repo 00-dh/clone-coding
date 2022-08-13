@@ -1,0 +1,34 @@
+.unvisible {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(-10%);
+}
+
+.moving {
+  transform: translateY(-10%);
+}
+
+.quote {
+  font-size: 22px;
+  color: rgb(241, 241, 241);
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+}
+.author {
+  font-size: 20px;
+  color: rgb(193, 193, 193);
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.author span {
+  transition: opacity 0.5s;
+}

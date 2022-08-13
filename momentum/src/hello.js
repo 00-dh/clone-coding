@@ -11,7 +11,7 @@ function timeGreeting() {
   if (Hours >= 6 && Hours < 12) {
     greetingTime = "moring";
   } else if (Hours >= 12 && Hours < 18) {
-    greetingTime = "after noon";
+    greetingTime = "afternoon";
   } else if (Hours >= 18 && Hours < 24) {
     greetingTime = "evening";
   } else if (Hours >= 0 && Hours < 6) {
@@ -23,7 +23,6 @@ function submitName(event) {
   event.preventDefault();
   login.classList.add(HIDDEN_CLASSNAME);
   clock.classList.remove(HIDDEN_CLASSNAME);
-  clock.classList.add("visibility");
   const userName = userNameInput.value;
   localStorage.setItem("username", userName);
   paintName(userName);
@@ -33,7 +32,7 @@ function paintName(name) {
   clock.classList.remove(HIDDEN_CLASSNAME);
   welcomeMessage.classList.remove(HIDDEN_CLASSNAME);
   timeGreeting();
-  welcomeMessage.innerText = `Good ${greetingTime}, ${name}`;
+  welcomeMessage.innerText = `Good ${greetingTime}, ${name}.`;
 }
 
 const savedUserName = localStorage.getItem("username");

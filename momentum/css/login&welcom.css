@@ -1,41 +1,11 @@
-.hidden {
-  opacity: 0;
-}
-
-.visibility {
-  opacity: 1;
-}
-img {
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-body {
-  color: white;
-}
-
-#clock {
-  font-weight: 500;
-  transition: all 1.5s ease-in-out;
-  margin: 0;
-  font-size: 1050%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .welcome_message {
+  font-family: "Roboto", sans-serif;
   transition: all 1.5s ease-in-out;
   transition-delay: 1.5s;
   margin: 0px;
-  font-size: 500%;
+  font-size: 350%;
   position: absolute;
-  top: 60%;
+  top: 57%;
   left: 50%;
   width: 100vw;
   text-align: center;
