@@ -55,12 +55,10 @@ author.innerText = randomQuotes.author;
 function visibleAuthor() {
   author.classList.remove("unvisible");
   author.classList.add("visible");
-  qutoeDiv.classList.add("visible");
 }
 
 function unVisibleAuthor() {
   author.classList.remove("visible");
-  qutoeDiv.classList.remove("visible");
   author.classList.add("unvisible");
 }
 
