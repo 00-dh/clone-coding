@@ -1,4 +1,6 @@
 .weather {
+  transition: opacity 1.5s ease-in-out;
+  transition-delay: 1.75s;
   position: fixed;
   top: 1%;
   right: 1%;

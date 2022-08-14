@@ -1,6 +1,6 @@
 .welcome_message {
   font-family: "Roboto", sans-serif;
-  transition: all 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
   transition-delay: 1.5s;
   margin: 0px;
   font-size: 350%;

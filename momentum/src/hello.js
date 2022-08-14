@@ -1,6 +1,9 @@
 const login = document.querySelector(".login");
 const userNameInput = document.querySelector("input");
 const welcomeMessage = document.querySelector(".welcome_message");
+const weatherDiv = document.querySelector(".weather");
+const todoBtn = document.querySelector(".todo_button");
+const todoFormDiv = document.querySelector(".todo_form");
 
 const HIDDEN_CLASSNAME = "hidden";
 let greetingTime;
@@ -22,7 +25,6 @@ function timeGreeting() {
 function submitName(event) {
   event.preventDefault();
   login.classList.add(HIDDEN_CLASSNAME);
-  clock.classList.remove(HIDDEN_CLASSNAME);
   const userName = userNameInput.value;
   localStorage.setItem("username", userName);
   paintName(userName);
@@ -31,6 +33,9 @@ function submitName(event) {
 function paintName(name) {
   clock.classList.remove(HIDDEN_CLASSNAME);
   welcomeMessage.classList.remove(HIDDEN_CLASSNAME);
+  weatherDiv.classList.remove(HIDDEN_CLASSNAME);
+  todoBtn.classList.remove(HIDDEN_CLASSNAME);
+  todoFormDiv.classList.remove(HIDDEN_CLASSNAME);
   timeGreeting();
   welcomeMessage.innerText = `Good ${greetingTime}, ${name}.`;
 }

@@ -1,4 +1,6 @@
 .todo_form {
+  transition: opacity 1.5s ease-in-out;
+  transition-delay: 1.5s;
   font-size: 40px;
   position: absolute;
   top: 75%;
@@ -39,6 +41,8 @@
 }
 
 .todo_button {
+  transition: opacity 1.5s ease-in-out;
+  transition-delay: 1.75s;
   font-size: 25px;
   position: fixed;
   right: 1%;
