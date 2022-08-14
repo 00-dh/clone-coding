@@ -1,0 +1,7 @@
+.weather {
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  font-weight: bold;
+  font-size: 20px;
+}
