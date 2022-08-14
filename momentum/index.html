@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      src="https://kit.fontawesome.com/b9df1fece5.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
@@ -20,11 +24,14 @@
       <h1>What is your main focus for today?</h1>
       <input required class="input_todo" tpye="text" />
     </form>
-    <ul class="todo_list"></ul>
+    <ul class="todo_list hidden">
+      <li class="empty"></li>
+    </ul>
     <div class="quotes">
       <span class="quote"></span>
       <span class="author unvisible"></span>
     </div>
+    <button class="todo_button">Todo List</button>
     <script src="src/hello.js"></script>
     <script src="src/clock.js"></script>
     <script src="src/bgp.js"></script>
