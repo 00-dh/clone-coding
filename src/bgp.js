@@ -1,4 +1,4 @@
-const photos = ["img/1.jpeg", "img/2.jpeg", "img/3.jpeg"];
+const photos = ["img/1.jpg", "img/2.jpg", "img/3.jpg"];
 const bgImage = document.createElement("img");
 
 const randomPhoto = photos[Math.floor(Math.random() * photos.length)];
